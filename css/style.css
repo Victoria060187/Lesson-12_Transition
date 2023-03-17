@@ -1,0 +1,112 @@
+@import url('reset.css');
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header {
+	background: greenyellow;
+    padding: 40px 0;
+	line-height: 28px;
+	
+}
+
+.main-menu {
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+    background:rgb(76, 238, 76);
+	font-family: 'Poppins';
+	font-weight: 900;
+}
+
+.main-menu a {
+	display: block;
+	text-decoration: none;
+	padding: 20px 40px;
+    color: green;
+}
+
+.main-menu > li {
+	position: relative;
+    background: yellow;
+    text-transform: uppercase;
+}
+
+.main-menu > li:hover .new-ul {
+	/* display: block; */
+	right: 0;
+}
+
+.new-ul {
+	position: absolute;
+	top: 100%;
+	right: -500%;
+	z-index: 1;
+	/* display: none; */
+    padding: 40px 0 0;
+	transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);;
+	font-family: 'Lato';
+	font-weight: 900;
+}
+
+.new-ul  li {
+	background: rgba(249, 249, 9, 0.856);
+    text-align: center;
+	position: relative;
+}
+
+.site-ul {
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    display: none;
+	font-family: 'Roboto';
+	font-weight: 900;
+}
+
+.new-ul > li:hover .site-ul {
+    display: block;
+}
+
+.hidden {
+	width: 0;
+	height: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.menu-ref a {
+	position: relative;
+}
+
+.menu-ref a:hover {
+	color: #000;
+}
+
+.menu-icon {
+	width: 40px;
+	height: 40px;
+	fill: green;
+	position: absolute;
+	top: 20%;
+	left: 0;
+}
+
+.menu-icon:hover {
+	fill: #000;
+}
+
+.menu-icon_right {
+	width: 40px;
+	height: 40px;
+	fill: green;
+	position: absolute;
+	top: 20%;
+	right: 0;
+}
+
+.menu-icon_right:hover {
+	fill: #000;
+}
